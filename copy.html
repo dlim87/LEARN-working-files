@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>copy a form</title>
+</head>
+
+<body>
+  <form>
+    <input id="myinput" type="textbox" name="myinput" value="input" default="insert your text here">
+    <input id="mybutton" type="submit" name="button" value="click me" onClick="myfunc(this.form)">
+    <input id="myoutput" type="textbox" name="myoutput">
+  </form>
+  <script language="JavaScript">
+    function myFunc(form) {
+      var copy = form.myinput.value
+      alert ("you typed: "+copy)
+      form.myoutput.value = copy
+      return copy
+    }
+  </script>
+</body>
+
+</html>
